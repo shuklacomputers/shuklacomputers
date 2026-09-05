@@ -1,1 +1,85 @@
-<!doctype html><html lang='hi'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Shukla Computers</title><link rel='stylesheet' href='style.css'></head><body><header><img src='assets/logo.png' style='max-width:220px;background:#fff;padding:6px;border-radius:10px'><h1>Shukla Computers</h1><p>9044871620</p></header><main><section style='background:#0d7a3a;color:#fff;padding:20px;text-align:center'><h2>Gift Sublimation • Mobile Accessories • Electronics</h2></section><div style='padding:15px'><input id=n placeholder='नाम'><input id=p placeholder='मोबाइल'><textarea id=m placeholder='क्या बनवाना है?'></textarea><button onclick='location.href=`https://wa.me/919044871620?text=`+encodeURIComponent(`नमस्ते, मुझे ऑर्डर देना है.\nनाम: ${n.value}\nमोबाइल: ${p.value}\nविवरण: ${m.value}`)'>WhatsApp Order</button></div></main></body></html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shukla Computers</title>
+<style>
+body{margin:0;font-family:Arial;background:#f5f5f5}
+.header{background:#0a6b2d;color:#fff;text-align:center;padding:18px}
+.logo{width:120px;border-radius:50%;background:#fff;padding:5px}
+.banner{background:linear-gradient(45deg,#0a6b2d,#148c42);color:#fff;padding:25px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:12px}
+.card{background:#fff;border-radius:12px;padding:12px;text-align:center;box-shadow:0 2px 8px #0002}
+.card img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+.btn{display:block;background:#0a6b2d;color:#fff;text-decoration:none;padding:12px;border-radius:8px;margin-top:8px}
+.form{padding:15px}
+input,textarea{width:100%;padding:10px;margin:6px 0;border:1px solid #ccc;border-radius:8px}
+.footer{background:#222;color:#fff;text-align:center;padding:15px}
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="shukla_logo.png" class="logo">
+<h1>Shukla Computers</h1>
+<p>📞 9044871620</p>
+<p>॥ श्री शिवाय नमस्तुभ्यं ॥</p>
+</div>
+
+<div class="banner">
+<h2>Gift Sublimation Printing</h2>
+<p>Mug • T-Shirt • Mobile Cover • Pillow • Keychain • Mobile Accessories • Electronics</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?w=400">
+<h3>Mug Printing</h3>
+<a class="btn" href="https://wa.me/919044871620?text=मुझे Mug Printing करानी है">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400">
+<h3>T-Shirt Printing</h3>
+<a class="btn" href="https://wa.me/919044871620?text=मुझे T-Shirt Printing करानी है">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400">
+<h3>Mobile Cover</h3>
+<a class="btn" href="https://wa.me/919044871620?text=मुझे Mobile Cover बनवाना है">Order Now</a>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400">
+<h3>Electronics</h3>
+<a class="btn" href="https://wa.me/919044871620?text=मुझे Electronics चाहिए">Order Now</a>
+</div>
+
+</div>
+
+<div class="form">
+<h2>Custom Gift Order</h2>
+<input id="name" placeholder="नाम">
+<input id="phone" placeholder="मोबाइल">
+<textarea id="msg" placeholder="क्या बनवाना है?"></textarea>
+<input type="file" accept="image/*">
+<a class="btn" href="#" onclick="sendOrder()">WhatsApp Order</a>
+</div>
+
+<div class="footer">
+<p>📍 Shukla Computers</p>
+<p>📞 9044871620</p>
+</div>
+
+<script>
+function sendOrder(){
+let text="नाम: "+name.value+"%0Aमोबाइल: "+phone.value+"%0Aऑर्डर: "+msg.value;
+window.location="https://wa.me/919044871620?text="+text;
+}
+</script>
+
+</body>
+</html>
